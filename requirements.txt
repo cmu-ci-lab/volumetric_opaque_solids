@@ -1,0 +1,9 @@
+trimesh==3.9.8
+numpy==1.26.2
+pyhocon==0.3.57
+opencv_python==4.8.1.78
+tqdm==4.50.2
+torch==1.13.0
+scipy==1.11.3
+PyMCubes==0.1.2
+tensorboard
