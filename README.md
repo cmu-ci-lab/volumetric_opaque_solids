@@ -46,7 +46,14 @@ sampler {
 }
 
 ```
-## Usage
+## Datasets
+The following datasets can be readily ingested by our training pipeline. (See below for the data convention.)
+
+* [DTU Dataset](https://volumetric-opaque-solids.s3.us-east-2.amazonaws.com/public_data/dtu.zip)
+
+* [Blended MVS Dataset](https://volumetric-opaque-solids.s3.us-east-2.amazonaws.com/public_data/bmvs.zip)
+
+* [NeRF Dataset](https://volumetric-opaque-solids.s3.us-east-2.amazonaws.com/public_data/nerf.zip)
 
 #### Data Convention
 The data is organized as follows:
@@ -66,6 +73,7 @@ The data is organized as follows:
 
 Here the `cameras_xxx.npz` follows the data format in [IDR](https://github.com/lioryariv/idr/blob/main/DATA_CONVENTION.md), where `world_mat_xx` denotes the world to image projection matrix, and `scale_mat_xx` denotes the normalization matrix.
 
+## Usage
 ### Setup
 ```shell
 cd volumetric_opaque_solids
