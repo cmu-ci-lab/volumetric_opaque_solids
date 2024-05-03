@@ -1,4 +1,5 @@
-# A theory of volumetric representations for opaque solids
+# Objects as volumes: A stochastic geometry view of opaque solids
+## [Project website](https://imaging.cs.cmu.edu/volumetric_opaque_solids/index.html)
 
 <p align="center">
   <img src="static/comparison.png"/>
