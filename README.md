@@ -1,5 +1,5 @@
 # Objects as volumes: A stochastic geometry view of opaque solids
-## [Project website](https://imaging.cs.cmu.edu/volumetric_opaque_solids/index.html)
+## [Project website](https://imaging.cs.cmu.edu/volumetric_opaque_solids/)
 
 <p align="center">
   <img src="static/comparison.png"/>
