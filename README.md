@@ -42,7 +42,7 @@ train {
 }
 
 # if outside samples > 0 overrides constant background color with learned background
-sampler {
+point_sampler {
   n_outside = 32          # num samples used for background net
 }
 
