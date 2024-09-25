@@ -81,8 +81,8 @@ class Density:
 
     @staticmethod
     def gaussian(mean_implicit, inv_std):
-        pdf = inv_std * INV_SQRT_2_PI * torch.exp(-0.5 * torch.square(mean_implicit * inv_std))
-        cdf = 0.5 + 0.5 * torch.erf(mean_implicit * inv_std * INV_SQRT_2)
+        pdf = inv_std * INV_SQRT_PI * torch.exp(-torch.square(mean_implicit * inv_std))
+        cdf = 0.5 + 0.5 * torch.erf(mean_implicit * inv_std)
         return pdf / (cdf + EPSILON)
 
     @staticmethod
