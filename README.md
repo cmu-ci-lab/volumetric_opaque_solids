@@ -63,16 +63,18 @@ The following datasets can be readily ingested by our training pipeline. (See be
 The data is organized as follows:
 
 ```
-<case_name>
-|-- cameras_xxx.npz    # camera parameters
-|-- image
-    |-- 000.png        # target image for each view
-    |-- 001.png
-    ...
-|-- mask
-    |-- 000.png        # target mask each view (For unmasked setting, set all pixels as 255)
-    |-- 001.png
-    ...
+exp_runner.py
+public_data
+|-- <case_name>
+    |-- cameras_xxx.npz    # camera parameters
+    |-- image
+        |-- 000.png        # target image for each view
+        |-- 001.png
+        ...
+    |-- mask
+        |-- 000.png        # target mask each view (For unmasked setting, set all pixels as 255)
+        |-- 001.png
+        ...
 ```
 
 Here the `cameras_xxx.npz` follows the data format in [IDR](https://github.com/lioryariv/idr/blob/main/DATA_CONVENTION.md), where `world_mat_xx` denotes the world to image projection matrix, and `scale_mat_xx` denotes the normalization matrix.
