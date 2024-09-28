@@ -7,6 +7,9 @@
 
 We explore the design space of attenuation coefficients for volumetric representations of opaque solids and demonstrate improvements from our theory in proof-of-concept surface reconstruction experiments. Primarily, we compare the parameters controlling the attenuation coefficient such as the implicit function distribution and the normal distribution. When applicable to the normal distirbution, we allow an anisotropy parameter to either be annealed on a fixed schedule or learned spatially. For the implementation of these distributions see the [attenuation coefficient model](./models/attenuation_coefficient.py).
 
+>[!NOTE]
+> This code was designed to evaluate different attenuation coefficient formulations on equal terms (i.e., equal quadrature and other ancillary settings), rather than for optimal reconstruction performance. See Section 5 of the paper for details. We recommend checking out Chen et al. 2024 ([project page](https://imaging.cs.cmu.edu/fast_dipole_sums/) / [code](https://github.com/cmu-ci-lab/fast_dipole_sums)) for a follow-up that uses our theory on attenuation coefficient and is optimized for performance.
+
 ## Configuration Options
 The main parameters for our experiments are defined below. Across methods we mainly vary the implicit distribution and normal distribution. Refer to an [example configuration](./confs/gaussian_linearmixture_spatial_bg.conf) for full set of training options.
 
